@@ -2,12 +2,12 @@ import { DataTypes,Model } from "sequelize";
 import sequelize from "../config/db";
 
 export class Service extends Model {
-    public id!: number;
-    public name!: string;
-    public type!: 'Normal' | 'VIP';
-    public categoryId!: number;
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
+    declare id: number;
+    declare name: string;
+    declare type: 'Normal' | 'VIP';
+    declare categoryId: number;
+    declare readonly createdAt: Date;
+    declare readonly updatedAt: Date;
 }
 
 Service.init(
